@@ -25,7 +25,7 @@
         <!-- inicio Dashboard -->
         <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" data-bs-scroll="false" data-bs-backdrop="static" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dashboard</h5>
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
@@ -40,8 +40,8 @@
               </li>
               <li class="mx-auto d-block">
                 <div class="btn-group mx-auto" role="group" aria-label="Button group with nested dropdown">
-                  <button type="button" class="btn btn-outline-primary">Cambiar contraseña</button>
-                  <button type="button" class="btn btn-outline-danger">Cerrar Sesion</button>
+                  <!-- <button type="button" class="btn btn-outline-primary">Cambiar contraseña</button> -->
+                  <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#cerrar">Cerrar Sesion</button>
                 </div>
               </li>
               <li><br></li>
@@ -67,13 +67,88 @@
                   </div>
                 </div>
               </li>
+              <li><br></li>
+
+              <!-- Botoles de los modales -->
+              <li>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                    Aviso de privacidad
+                  </button>
+                  <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                    Politica de privacidad
+                  </button>
+                </div>
+              </li>
+              
             </ul>
           </div>
         </div>
       </div>
     </nav>
     <!-- fin del navbar -->
+    
+    <!-- Modales -->
 
+      <!-- Modal 1 -->
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Aviso de privacidad</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              En Psicopedagogía, valoramos y respetamos su privacidad. Todos los datos personales recopilados a través de nuestros tests se mantienen estrictamente 
+              confidenciales y se utilizan únicamente con fines de evaluación y mejora del aprendizaje. No compartimos, vendemos ni divulgamos su información a 
+              terceros sin su consentimiento.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 2 -->
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Politica de privacidad</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Nuestra política de privacidad está diseñada para proteger la información personal de nuestros usuarios. Puede encontrar información detallada sobre 
+              cómo recopilamos, almacenamos y utilizamos sus datos en nuestra Política de Privacidad. Respetamos todas las leyes de protección de datos y estamos 
+              comprometidos con mantener su información segura.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Cerrar sesion -->
+      <div class="modal fade" id="cerrar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Cerrar sesion</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ¿Estas seguro de que quieres cerrar sesion?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar Sesion</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
     <!-- Inicio del contenido -->
     <div style="background-color: rgb(184, 184, 184);">
       <div class="container">
@@ -85,7 +160,7 @@
             <div class="card" style="width: 18rem;">
               <img src="test.png" class="card-img-top" alt="Imagen-test">
               <div class="card-body">
-                <h5 class="card-title">Test 1</h5>
+                <h5 class="card-title">Canal de aprendizaje de preferencia</h5>
                 <p class="card-text">Este test es el primer test xd</p>
                 <a href="#" class="btn btn-primary">Iniciar test</a>
               </div>
@@ -95,7 +170,7 @@
             <div class="card" style="width: 18rem;">
               <img src="test.png" class="card-img-top" alt="Imagen-test">
               <div class="card-body">
-                <h5 class="card-title">Test 2</h5>
+                <h5 class="card-title">Estilos de aprendizaje (Honey Alonso)</h5>
                 <p class="card-text">Este test es el segundo test xd</p>
                 <a href="#" class="btn btn-primary">Iniciar test</a>
               </div>
@@ -105,7 +180,7 @@
             <div class="card" style="width: 18rem;">
               <img src="test.png" class="card-img-top" alt="Imagen-test">
               <div class="card-body">
-                <h5 class="card-title">Test 3</h5>
+                <h5 class="card-title">Estilos de aprendizaje (Modelo PNL)</h5>
                 <p class="card-text">Este test es el tercer test xd</p>
                 <a href="#" class="btn btn-primary">Iniciar test</a>
               </div>
@@ -115,7 +190,7 @@
             <div class="card" style="width: 18rem;">
               <img src="test.png" class="card-img-top" alt="Imagen-test">
               <div class="card-body">
-                <h5 class="card-title">Test 4</h5>
+                <h5 class="card-title">Cuestionario de Riesgos Psicosociales</h5>
                 <p class="card-text">Este test es el cuarto test xd</p>
                 <a href="#" class="btn btn-primary">Iniciar test</a>
               </div>
@@ -133,11 +208,6 @@
     <footer class="bg-dark text-center text-lg-start">
       <div class="text-center text-white p-3">
         ©Psicopedagogia 2023
-        <div class="row">
-          <div class="col"><a href="#">Aviso de privacidad</a></div>
-          <div class="col"><a href="#">Politica de privacidad</a></div>
-        </div>
-        <a href=""></a>
       </div>
     </footer>
     <!-- Fin del Footer -->
