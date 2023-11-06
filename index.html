@@ -22,7 +22,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Dashboard -->
-        <div class="offcanvas offcanvas-end text-bg-dark show" tabindex="-1" data-bs-scroll="true" data-bs-backdrop="false" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" data-bs-scroll="true" data-bs-backdrop="false" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dashboard</h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -32,12 +32,38 @@
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="mx-auto d-block">
                 <img src="user.png" alt="" height="150px" width="150px">
-                <p>Usuario: Jefe De Area</p>
+              </li>
+              <li class="mx-auto d-block" style="font-size: 1.8rem; text-align: center;">
+                <p>Benito Camelo Lomas Turbas</p>
               </li>
               <li class="mx-auto d-block">
                 <div class="btn-group mx-auto" role="group" aria-label="Button group with nested dropdown">
                   <button type="button" class="btn btn-outline-primary">Cambiar contraseña</button>
                   <button type="button" class="btn btn-outline-danger">Cerrar Sesion</button>
+                </div>
+              </li>
+              <li>
+                <br>
+              </li>
+              <li>
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item bg-dark">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fa-solid fa-book-open" style="margin-right: 0.5rem;"></i>Examenes
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body text-white">
+                        <div class="list-group list-group-flush">
+                          <a href="#" class="list-group-item list-group-item-action bg-dark text-white"><i class="fa-solid fa-pen" style="margin-right: 0.5rem;"></i>Test 1</a>
+                          <a href="#" class="list-group-item list-group-item-action bg-dark text-white"><i class="fa-solid fa-pen" style="margin-right: 0.5rem;"></i>Test 2</a>
+                          <a href="#" class="list-group-item list-group-item-action bg-dark text-white"><i class="fa-solid fa-pen" style="margin-right: 0.5rem;"></i>Test 3</a>
+                          <a href="#" class="list-group-item list-group-item-action bg-dark text-white"><i class="fa-solid fa-pen" style="margin-right: 0.5rem;"></i>Test 4</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -46,7 +72,53 @@
       </div>
     </nav>
     <!-- fin del navbar -->
-    <h1>hola</h1>
+
+    <!-- Inicio del contenido -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="test.png" class="card-img-top" alt="Imagen-test">
+            <div class="card-body">
+              <h5 class="card-title">Test 1</h5>
+              <p class="card-text">Este test es el primer test xd</p>
+              <a href="#" class="btn btn-primary">Iniciar test</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="test.png" class="card-img-top" alt="Imagen-test">
+            <div class="card-body">
+              <h5 class="card-title">Test 2</h5>
+              <p class="card-text">Este test es el segundo test xd</p>
+              <a href="#" class="btn btn-primary">Iniciar test</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="test.png" class="card-img-top" alt="Imagen-test">
+            <div class="card-body">
+              <h5 class="card-title">Test 3</h5>
+              <p class="card-text">Este test es el tercer test xd</p>
+              <a href="#" class="btn btn-primary">Iniciar test</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="test.png" class="card-img-top" alt="Imagen-test">
+            <div class="card-body">
+              <h5 class="card-title">Test 4</h5>
+              <p class="card-text">Este test es el cuarto test xd</p>
+              <a href="#" class="btn btn-primary">Iniciar test</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
 
 
 
